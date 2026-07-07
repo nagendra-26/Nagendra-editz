@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagendra | Video Editor & Digital Marketer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader">
+        <h1 class="loader-text">NAGENDRA PARAMAGURU</h1>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">NAGENDRA PARAMAGURU</div>
+        <ul class="nav-links" id="sidemenu">
+            <li><a href="#about" class="hover-target">About</a></li>
+            <li><a href="#education" class="hover-target">Education</a></li>
+            <li><a href="#work" class="hover-target">Work</a></li>
+            <li><a href="#expertise" class="hover-target">Expertise</a></li>
+            <li><a href="#contact" class="hover-target">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <!-- Main Wrapper for Smooth Scroll -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Hero Section -->
+            <section class="hero" id="home">
+                <div class="video-overlay"></div>
+                <video class="hero-bg-video" autoplay loop muted playsinline>
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-particles-and-stars-in-space-23427-large.mp4" type="video/mp4">
+                </video>
+                <div class="hero-content">
+                    <div class="hero-title">
+                        <h1 class="split-text" id="edit-hero-1">CREATIVE</h1>
+                        <h1 class="split-text" id="edit-hero-2">STORYTELLER</h1>
+                    </div>
+                    <div class="hero-subtitle">
+                        <p id="edit-hero-sub">Passionate digital marketing and video editing professional, creating
+                            engaging content, driving brand growth, and delivering impactful visual stories.</p>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about" id="about">
+                <img src="profile.png" class="about-profile-bg" alt="Nagendra Profile">
+                <div class="container">
+                    <h2 class="section-title">ABOUT ME</h2>
+                    <p class="about-text" id="edit-about">
+                        I am a passionate Digital Marketing and Video Editing professional with 3+ years of experience.I
+                        specialize in social media
+                        marketing, creative video production. My passion lies in turning ideas into compelling visual
+                        stories, delivering results through creativity, innovation, and
+                        dedication.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="education" id="education">
+                <div class="container">
+                    <h2 class="section-title">EDUCATION</h2>
+                    <div class="education-list">
+                        <div class="education-item hover-target">
+                            <div class="edu-year">2021 - 2023</div>
+                            <div class="edu-details">
+                                <h3>Beycan Robotics Training Institute</h3>
+                                <p>Rajapalayam</p>
+                            </div>
+                        </div>
+                        <div class="education-item hover-target">
+                            <div class="edu-year">2018 - 2021</div>
+                            <div class="edu-details">
+                                <h3>B.Sc. Maths with Computer Application</h3>
+                                <p>Rajapalayam Rajus' College, Rajapalayam</p>
+                            </div>
+                        </div>
+                        <div class="education-item hover-target">
+                            <div class="edu-year">2016 - 2018</div>
+                            <div class="edu-details">
+                                <h3>HSC</h3>
+                                <p>P.A.C.M. Higher Secondary School, Rajapalayam</p>
+                            </div>
+                        </div>
+                        <div class="education-item hover-target">
+                            <div class="edu-year">2011 - 2016</div>
+                            <div class="edu-details">
+                                <h3>SSLC</h3>
+                                <p>P.A.C.M. Higher Secondary School, Rajapalayam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Horizontal Scroll Work Section -->
+            <section class="work" id="work">
+                <div class="work-container">
+                    <div class="work-header">
+                        <h2>SELECTED WORKS</h2>
+                    </div>
+                    <div class="projects-wrapper" id="projects-wrapper">
+                        <!-- Projects injected via JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expertise Section -->
+            <section class="expertise" id="expertise">
+                <div class="container">
+                    <h2 class="section-title">EXPERTISE</h2>
+                    <div class="expertise-list">
+                        <div class="expertise-item hover-target">
+                            <div class="expertise-header">
+                                <span class="expertise-num">01</span>
+                                <h3>Video Editing & Post-Production</h3>
+                            </div>
+                            <div class="expertise-content">
+                                <p>Expert in crafting compelling narratives through seamless editing. Mastering pacing, rhythm, and color science to deliver broadcast-quality content.</p>
+                                <div class="tech-stack">
+                                    <span>Adobe Premiere Pro</span>
+                                    <span>DaVinci Resolve</span>
+                                    <span>Final Cut Pro</span>
+                                    <span>Color Grading</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="expertise-item hover-target">
+                            <div class="expertise-header">
+                                <span class="expertise-num">02</span>
+                                <h3>Web Development</h3>
+                            </div>
+                            <div class="expertise-content">
+                                <p>Building responsive, dynamic, and user-centric websites. Specializing in modern web technologies and creating seamless interactive experiences across all devices.</p>
+                                <div class="tech-stack">
+                                    <span>HTML5 & CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>React</span>
+                                    <span>Responsive Design</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="expertise-item hover-target">
+                            <div class="expertise-header">
+                                <span class="expertise-num">03</span>
+                                <h3>Digital Marketing & Strategy</h3>
+                            </div>
+                            <div class="expertise-content">
+                                <p>Data-driven marketing that scales. Specializing in creating high-converting ad funnels, analyzing metrics, and building sustainable brand awareness across platforms.</p>
+                                <div class="tech-stack">
+                                    <span>Meta Ads</span>
+                                    <span>Google Ads</span>
+                                    <span>SEO Strategy</span>
+                                    <span>Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="expertise-item hover-target">
+                            <div class="expertise-header">
+                                <span class="expertise-num">04</span>
+                                <h3>Creative Direction & Content</h3>
+                            </div>
+                            <div class="expertise-content">
+                                <p>Guiding projects from ideation to execution. Developing brand voices, storyboarding campaigns, and directing talent to achieve a unified visual language.</p>
+                                <div class="tech-stack">
+                                    <span>Storyboarding</span>
+                                    <span>Copywriting</span>
+                                    <span>Directing</span>
+                                    <span>Brand Identity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Contact -->
+            <footer class="contact" id="contact">
+                <h2 class="footer-title" id="edit-footer">LET'S TALK</h2>
+                <a href="mailto:paramagurunagendra@gmail.com" class="email-link hover-target"
+                    id="edit-email">paramagurunagendra@gmail.com</a>
+                <div class="socials">
+                    <a href="https://www.instagram.com/_nagendra_paramaguru726?igsh=d2hubmE3NWZyY2Nj" class="hover-target" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.linkedin.com/in/nagendra-p-276391239?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="hover-target" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+                <p class="copyright">© 2026 Nagendra. All rights reserved.</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Admin Tools -->
+    <div id="admin-login-btn" class="hover-target">Admin</div>
+    <div id="admin-ui" class="hidden">
+        <button id="admin-add-project" class="admin-btn">Add Project</button>
+        <button id="admin-save" class="admin-btn">Save Changes</button>
+        <button id="admin-logout" class="admin-btn">Logout</button>
+    </div>
+
+    <!-- External Libraries -->
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <!-- Custom Logic -->
+    <script src="script.js"></script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.classList.add("active");
+        }
+        function closemenu() {
+            sidemenu.classList.remove("active");
+        }
+        // Auto-close menu when a link is clicked on mobile
+        document.querySelectorAll('#sidemenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                closemenu();
+            });
+        });
+    </script>
+</body>
+
+</html>
