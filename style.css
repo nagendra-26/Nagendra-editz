@@ -284,11 +284,6 @@ nav {
     /* GSAP animates this */
 }
 
-nav .fa-bars,
-nav .fa-times {
-    display: none !important;
-}
-
 /* Education Section */
 .education {
     min-height: 100vh;
